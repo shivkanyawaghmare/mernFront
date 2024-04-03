@@ -19,7 +19,7 @@ function TransactionDesc() {
     const getData = async () => {
       setLoading(true);
       try {
-        const result = await axios.get(`https://mernback-tghi.onrender.com/api/gettransaction/${id}`);
+        const result = await axios.get(`https://mernback-tghi.onrender.com/gettransaction/${id}`);
         setTransItem(result.data.transaction);
         setError('');
       } catch (error) {
