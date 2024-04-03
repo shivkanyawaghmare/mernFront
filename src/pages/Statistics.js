@@ -22,7 +22,7 @@ function Statistics() {
         const selectedDate = new Date(selectedMonth + ' 1, 2022'); // Assume year is 2022 for simplicity
         const formattedDate = selectedDate.toISOString().split('T')[0];
 
-        const response = await axios.get(`https://mernback-tghi.onrender.com/api/statistics?month=${formattedDate}`);
+        const response = await axios.get(`https://mernback-tghi.onrender.com/statistics?month=${formattedDate}`);
         setTotalSaleAmount(response.data.totalSaleAmount);
         setTotalSoldItems(response.data.totalSoldItems);
         setTotalNotSoldItems(response.data.totalNotSoldItems);
