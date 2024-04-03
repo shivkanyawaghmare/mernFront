@@ -12,7 +12,7 @@ function HomePage() {
   const getData = async () => {
     setLoading(true)
     try {
-      const result = await axios.get('https://mernback-tghi.onrender.com/api/getalltransaction')
+      const result = await axios.get('https://mernback-tghi.onrender.com/getalltransaction')
       setLoading(false)
       setNewsItems(result.data)
       console.log(result.data)
