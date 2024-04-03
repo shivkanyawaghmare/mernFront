@@ -1,0 +1,10 @@
+/* increase height and width */
+.draft-editor{
+  min-height:300px;
+  max-height: max-content;
+}
+
+/* Below code is as per documentations */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
