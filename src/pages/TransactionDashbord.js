@@ -19,7 +19,7 @@ function TransactionDashboard() {
   const getData = async () => {
     setLoading(true)
     try {
-      const result = await axios.get('https://mernback-tghi.onrender.com/api/transactions')
+      const result = await axios.get('https://mernback-tghi.onrender.com/transactions')
       setLoading(false)
       setNewsItems(result.data)
       console.log(result.data)
